@@ -1,0 +1,51 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+    padding: 70px 150px 0;
+}
+
+.static-text {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #6b7280;
+    border-radius: 5px;
+}
+
+.comment {
+    margin-bottom: 5px;
+    /*padding: 5px;*/
+    border: 1px solid #6b7280;
+    border-radius: 5px;
+}
+
+.comment-header {
+    position: relative;
+    height: 24px;
+    border-bottom: 1px solid #6b7280;
+    font-size: 12px;
+    background-color: #eeeeee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.comment-user {
+    position: absolute;
+    top: 2px;
+    left: 7px;
+}
+
+.comment-time {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+}
+
+.comment-body {
+    padding: 7px;
+}
+
+#moreContainer {
+    padding: 15px 5px 30px;
+}
