@@ -1,64 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Демо-проект на должность «PHP разработчик»
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Общее:
+Можно (но не обязательно) использовать любой фреймворк, как для бэка, так и для фронта.
 
-## About Laravel
+### Суть задачи:
+Реализовать страницу с комментариями к произвольному статичному тексту.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Задачи:
+1. Реализовать добавление комментария, оно должно происходить без перезагрузки страницы. Новый комментарий должен быть отображён на странице сразу после добавления.
+2. Изначально показывать 3 комментария, остальные должны подгружаться (3 за один раз) по нажатию на кнопку “Показать ещё”.
+3. Страница должна быть защищена авторизацией. Неавторизованному пользователю доступен только просмотр. Логин и пароль должны храниться в БД 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+(3 – не обязательно)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Для реализации использовал:
+1. PHP 8
+2. Laravel 9
+3. Bootstrap 5
+4. JavaScript + jQuery 3
+5. MySQL 8
 
-## Learning Laravel
+Использовал локальный WEB-сервер Apache 2.4. Корневой WEB-каталог:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```basile-demo.loc/```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Основные файлы проекта:
+1. ```routs/web.php```
+2. ```resources/views/home.blade.php```
+3. ```app/Http/Controllers/CommentController.php```
+4. ```app/Http/Controllers/HomeController.php```
+5. ```app/Http/Controllers/UserController.php```
+6. ```app/Models/Comment.php```
+7. ```app/Models/User.php```
+8. ```public/js/main.js```
+9. ```public/css/main.css```
 
-## Laravel Sponsors
+#### Перед запуском приложения поправьте в корне файл.env (на предмет настроек DB_DATABASE, DB_USERNAME, DB_PASSWORD), создайте на сервере MySQL пустую базу и примените миграции (php artisan migrate).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Василий Малинин.**
+- **+7 916 114-5109**
+- **basile-m@yandex.ru**
