@@ -15,8 +15,9 @@ class HomeController extends Controller {
             session(['limit' => 3]);
         }
 
+        // Проверяем доступ к MySQL
         try {
-            $pdo = Comment::query()->count();
+            Comment::query()->count();
             return view('home');
         }
         catch (QueryException $e) {
