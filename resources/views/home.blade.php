@@ -76,7 +76,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Демо-проект на должность «программист PHP»</span>
+            <span class="navbar-brand mb-0 h1">Демо-проект на должность PHP-разработчик</span>
         </div>
         <div class="container-fluid justify-content-center">
             <span id="spanHello" class="navbar-brand d-inline"></span>

@@ -75,7 +75,7 @@ function updateInterface(info) {
         $('#linkLogout').hide();
         $('#textComment')
             .attr('disabled', true)
-            .attr('placeholder', 'Авторизуйтесь, чтобы оставить комментарий.');
+            .attr('placeholder', 'Авторизуйтесь или зарегистрируйтесь, чтобы оставить комментарий.');
         $('#btnAddComment').attr('disabled', true);
     }
 
