@@ -15,6 +15,7 @@
 4. JavaScript + jQuery 3
 5. MySQL 8
 6. WEB-сервер Apache 2.4
+7. Среда разработки PhpStorm 2021
 
 ### Корневой WEB-каталог:
 
