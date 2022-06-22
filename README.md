@@ -17,24 +17,8 @@
 6. WEB-сервер Apache 2.4 (локально)
 7. Среда разработки PhpStorm 2021
 
-### Корневой WEB-каталог:
-
-```basile-demo.loc/```
-
-### Основные файлы проекта:
-1. ```routs/web.php```
-2. ```resources/views/home.blade.php```
-3. ```app/Http/Controllers/CommentController.php```
-4. ```app/Http/Controllers/HomeController.php```
-5. ```app/Http/Controllers/UserController.php```
-6. ```app/Models/Comment.php```
-7. ```app/Models/User.php```
-8. ```public/js/main.js```
-9. ```public/css/main.css```
-
 ### После клонирования можно сразу запустить.
-
-    
+   
 - **Василий Малинин.**
 - **+7 916 114-5109**
 - **basile-m@yandex.ru**
